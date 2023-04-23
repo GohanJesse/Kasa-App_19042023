@@ -1,22 +1,24 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import D_404 from "./components/D_404/D_404";
-import D_About from "./components/D_About/D_About";
-import D_Accommodation from "./components/D_Accommodation/D_Accommodation";
-import Navbar from "./components/Navbar/Navbar";
+import NotFound from "./components/NotFound/NotFound";
+import About from "./components/About/About";
+import Accommodation from "./components/Accommodation/Accommodation";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Accommodation" element={<D_Accommodation />} />
-        <Route path="/Accommodation/:id" element={<D_Accommodation />} />
-        <Route path="/About" element={<D_About />} />
-        <Route path="*" element={<D_404 />} />
+        <Route path="/Accommodation" element={<Accommodation />} />
+        <Route path="/Accommodation/:id" element={<Accommodation />} />
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
