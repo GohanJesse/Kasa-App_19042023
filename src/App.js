@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Accommodation from "./components/Accommodation/Accommodation";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import "./index.css"
 
 
 function App() {

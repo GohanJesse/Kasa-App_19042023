@@ -1,13 +1,14 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
+import Styles from "./NotFound.module.css"
 
 export default function NotFound() {
     const navigate = useNavigate()
     return (
-        <div>
-            <h1>404</h1>
-            <h2>Oups! la page que vous demandez n'existe pas.</h2>
-            <span onClick={() => navigate("/")}>Retourner sur la page d'acceuil</span>
-        </div>
+        <section className={Styles.containerNotfound}>
+            <h2 className={Styles.h2Notfound}>404</h2>
+            <p className={Styles.pNotfound}>Oups! la page que vous demandez n'existe pas.</p>
+            <span className={Styles.spanNotfound} onClick={() => navigate("/")}>Retourner sur la page d'acceuil</span>
+        </section>
     )
 }
