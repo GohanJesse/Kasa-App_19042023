@@ -2,10 +2,10 @@ import React from 'react'
 import Styles from "./Banner.module.css"
 
 
-export default function Banner() {
+export default function Banner({ backgroundImage, text }) {
   return (
-    <div className={Styles.bannerHome}>
-        <h2 className={Styles.tag}>Chez vous, partout ailleurs</h2>
+    <div className={Styles.banner} style={{ backgroundImage: `url(${backgroundImage})` }}>
+        {text && <p className={Styles.tag}>{text}</p>}
     </div>
   )
 }

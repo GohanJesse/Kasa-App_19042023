@@ -8,14 +8,14 @@ import Data from "../../Data/tempData.json";
 export default function Gallery() {
 
   const items = Data
-  console.log(Data);
+  // console.log(Data);
 
 
   return (
     <div className={Styles.gallery}>
         {items.map((item, index) => (
                 <Card 
-                    key={"${item.id}"}
+                    key={item.id}
                     title={item.title}
                     cover={item.cover}
                 />

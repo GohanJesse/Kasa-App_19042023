@@ -1,11 +1,11 @@
-.bannerHome {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 223px;
   width: 86%;
   border-radius: 25px;
-  background-image: url("./IMG_BannerHome.png");
+  /* background-image: url("./IMG_BannerHome.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   margin-top: 40px;
 }
 
-.bannerHome::before {
+.banner::before {
   content: "";
   position: absolute;
   top: 0;
@@ -25,12 +25,28 @@
   border-radius: 25px;
 }
 
-.bannerHome .tag {
+.banner .tag {
   color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
+  line-height: 142.6%;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    width: 90%;
+    height: 180px;
+  }
+
+  .banner .tag {
+    padding: 0 16px 0 16px;
+    font-size: 36px;
+    line-height: 120%;
+
+  }
+
 }

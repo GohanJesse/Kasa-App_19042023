@@ -6,6 +6,7 @@ export default function Card({ title, cover }) {
 
   return (
     <div className={Styles.card} style={{ backgroundImage: `url(${cover})` }}>
+        <div className={Styles.gradient}></div>
         <p>{title}</p>
     </div>
   )
