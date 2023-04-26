@@ -1,12 +1,36 @@
 .gallery {
-    width: 86%;
-    height: 830px;
-    background: #F7F7F7;
-    border-radius: 25px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2%;
+  width: 86%;
+  height: auto;
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2%;
+}
+
+@media (max-width: 993px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        height: auto;
+        background: none;
+      }
+}
+
+
+@media (max-width: 768px) {
+  .gallery {
+    height: auto;
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+    height: auto;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
 }

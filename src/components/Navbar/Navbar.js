@@ -1,11 +1,14 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./Navbar.module.css"
+import Styles from "./Navbar.module.css"
 
 
 export default function Navbar() {
+
+    
+
     return (
-        <nav>
+        <nav className={Styles.navbar}>
             <NavLink to="/" className={({ isActive }) => isActive ? "activeLink" : ""}>
                 Accueil
             </NavLink>

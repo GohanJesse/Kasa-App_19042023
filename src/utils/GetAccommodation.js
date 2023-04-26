@@ -7,8 +7,9 @@ export default function GetAccommodation() {
 
     useEffect(() => {
         setItems(Data);
-        console.log(Data);
     }, [])
+    
+    console.log(Data);
 
     return items;
 }

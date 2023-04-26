@@ -1,9 +1,9 @@
-nav {
+.navbar {
     display: flex;
     grid-gap: 57px;
 }
 
-nav a {
+.navbar a {
     color:  #FF6060;
     text-decoration: none;
     font-family: 'Montserrat';
@@ -11,5 +11,11 @@ nav a {
     font-weight: 500;
     font-size: 24px;
 }
+
+.navbar a:active {
+    text-decoration: underline;
+}
+
+
 
 
