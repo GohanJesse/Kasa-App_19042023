@@ -5,3 +5,13 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 20px 0 20px;
+    }
+
+    .logoHeader {
+        width: 145px;
+    }
+  }

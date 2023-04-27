@@ -1,9 +1,9 @@
-.navbar {
+.navBar {
     display: flex;
     grid-gap: 57px;
 }
 
-.navbar a {
+.navBar a {
     color:  #FF6060;
     text-decoration: none;
     font-family: 'Montserrat';
@@ -12,10 +12,21 @@
     font-size: 24px;
 }
 
-.navbar a:active {
+.activeLink {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .navBar {
+        grid-gap: 10px;
+    }
+
+    .navBar a {
+        font-size: 12px;
+    }
+
+  
+  }
 
 
 
