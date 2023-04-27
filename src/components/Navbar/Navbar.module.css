@@ -1,32 +1,27 @@
 .navBar {
-    display: flex;
-    grid-gap: 57px;
+  display: flex;
+  grid-gap: 57px;
 }
 
 .navBar a {
-    color:  #FF6060;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+  color: #ff6060;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .activeLink {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .navBar {
-        grid-gap: 10px;
-    }
-
-    .navBar a {
-        font-size: 12px;
-    }
-
-  
+  .navBar {
+    grid-gap: 10px;
   }
 
-
-
+  .navBar a {
+    font-size: 12px;
+  }
+}

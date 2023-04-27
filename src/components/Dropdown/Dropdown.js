@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Styles from "./Dropdown.module.css";
 import VectorUp from "./VectorUp.png";
 import VectorDown from "./VectorDown.png";
 
 export default function Dropdown({ title, content }) {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -16,7 +15,10 @@ export default function Dropdown({ title, content }) {
     <div className={Styles.dropdownContainer}>
       <button className={Styles.dropdownBtn} onClick={toggleDropdown}>
         {title}
-        <img className={Styles.arrowIcon} src={isOpen ? VectorUp : VectorDown} />
+        <img
+          className={Styles.arrowIcon}
+          src={isOpen ? VectorUp : VectorDown}
+        />
       </button>
       {isOpen && (
         <div className={Styles.dropdownContentContainer}>
@@ -24,8 +26,8 @@ export default function Dropdown({ title, content }) {
         </div>
       )}
     </div>
-  )
-};
+  );
+}
 
 Dropdown.propTypes = {
   title: PropTypes.string,

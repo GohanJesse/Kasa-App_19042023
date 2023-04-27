@@ -1,21 +1,16 @@
 .aboutMain {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 30px;
-    margin-bottom: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+  margin-bottom: 200px;
 }
 
 @media (max-width: 768px) {
-    .aboutMain {
-        grid-gap: 20px;
-        margin-bottom: 160px;
-    }
-  
+  .aboutMain {
+    grid-gap: 20px;
+    margin-bottom: 160px;
   }
-  
-
-
-
+}

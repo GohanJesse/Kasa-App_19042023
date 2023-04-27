@@ -19,8 +19,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,0.7735042735042735) 0%, rgba(0,0,0,0) 48%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.7735042735042735) 0%,
+    rgba(0, 0, 0, 0) 48%
+  );
   z-index: 1;
   border-radius: 25px;
 }

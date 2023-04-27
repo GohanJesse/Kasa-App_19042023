@@ -12,14 +12,13 @@
 }
 
 @media (max-width: 993px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        overflow: hidden;
-        height: auto;
-        background: none;
-      }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    height: auto;
+    background: none;
+  }
 }
-
 
 @media (max-width: 768px) {
   .gallery {
@@ -32,5 +31,4 @@
     margin-bottom: 20px;
     grid-gap: 10px;
   }
-
 }
