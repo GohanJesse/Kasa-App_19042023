@@ -1,0 +1,23 @@
+.AccommodationMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+}
+
+.blocInfoAccommodation {
+    display: flex;
+    width: 85%;
+    height: 176px;
+    border: 1px solid black;
+}
+
+.blocDropdownAccommodation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 305px;
+    width: 100%;
+    border: solid black 1px;
+}

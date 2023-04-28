@@ -1,0 +1,23 @@
+.infoAccommodation {
+    height: 176px;
+    width: 60%;
+    border: red 1px solid;
+    padding-top: 20px;
+}
+
+.nameAcco {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+}
+
+.locationAcco {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+}

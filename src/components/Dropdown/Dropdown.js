@@ -18,6 +18,7 @@ export default function Dropdown({ title, content }) {
         <img
           className={Styles.arrowIcon}
           src={isOpen ? VectorUp : VectorDown}
+          alt="Arrow Icon"
         />
       </button>
       {isOpen && (
@@ -31,5 +32,5 @@ export default function Dropdown({ title, content }) {
 
 Dropdown.propTypes = {
   title: PropTypes.string,
-  content: PropTypes.string,
+  description: PropTypes.string,
 };
