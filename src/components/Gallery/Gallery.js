@@ -7,7 +7,6 @@ import Data from "../../Data/tempData.json";
 export default function Gallery() {
 
   const items = Data;
-  // console.log(Data);
 
   return (
     <div className={Styles.gallery}>

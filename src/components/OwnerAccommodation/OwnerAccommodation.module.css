@@ -1,6 +1,69 @@
-.ownerAccommodation {
-    color: #FF6060;
-    height: 176px;
-    width: 40%;
-    border: blue 1px solid;
+.ownerInformation {
+  color: #ff6060;
+  height: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.ownerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nameProfil {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  padding-right: 10px;
+}
+
+.imgProfil {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 24px;
+  grid-gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .ownerInformation {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
+  }
+  .ratingContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .imgProfil {
+    height: 32px;
+    width: 32px;
+  }
+
+  .nameProfil {
+    font-size: 12px;
+
+  }
 }

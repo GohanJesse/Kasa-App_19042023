@@ -8,9 +8,57 @@
   margin-bottom: 200px;
 }
 
+.bannerContainerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 223px;
+  width: 85%;
+}
+
+.dropContainer {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  width: 70%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.6%;
+}
+
+.dropContainer button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   .aboutMain {
     grid-gap: 20px;
     margin-bottom: 160px;
+  }
+
+  .bannerContainerAbout {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dropContainer {
+    width: 90%;
+    font-size: 12px;
+    grid-gap: 20px;
+
+  }
+
+  .dropContainer button {
+    font-size: 13px;
+    height: 30px;
+
   }
 }

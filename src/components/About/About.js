@@ -9,7 +9,7 @@ const infoDropdown = [
     id: "1",
     title: "Fiabilité",
     description:
-      "Les annonces postées sur KAsa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
+      "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
   },
   {
     id: "2",
@@ -27,19 +27,28 @@ const infoDropdown = [
     id: "4",
     title: "Sécurité",
     description:
-      "La sécurité est la prioprité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+      "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   },
 ];
 
 export default function About() {
-  // console.log(infoDropdown);
 
   return (
     <div className={Styles.aboutMain}>
-      <Banner backgroundImage={IMGBannerAbout} />
+      <div className={Styles.bannerContainerAbout}>
+      <Banner 
+      backgroundImage={IMGBannerAbout} 
+      />
+      </div>
+      <div className={Styles.dropContainer}>
       {infoDropdown.map((info) => (
-        <Dropdown key={info.id} title={info.title} content={info.description} />
+        <Dropdown 
+        key={info.id} 
+        title={info.title} 
+        content={info.description}
+        />
       ))}
+      </div>
     </div>
   );
-}
+};

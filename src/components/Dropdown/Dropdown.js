@@ -4,8 +4,8 @@ import Styles from "./Dropdown.module.css";
 import VectorUp from "./VectorUp.png";
 import VectorDown from "./VectorDown.png";
 
-export default function Dropdown({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Dropdown({ title, content, defaultOpen = false }) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -23,7 +23,7 @@ export default function Dropdown({ title, content }) {
       </button>
       {isOpen && (
         <div className={Styles.dropdownContentContainer}>
-          <p className={Styles.dropdownContent}>{content}</p>
+          <div className={Styles.dropdownContent}>{content}</div>
         </div>
       )}
     </div>
@@ -32,5 +32,10 @@ export default function Dropdown({ title, content }) {
 
 Dropdown.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.node),
+  ]),
+  defaultOpen: PropTypes.bool,
 };
+

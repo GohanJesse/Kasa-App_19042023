@@ -13,7 +13,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Accommodation/" element={<Accommodation />} />
         <Route path="/Accommodation/:id" element={<Accommodation />} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<NotFound />} />

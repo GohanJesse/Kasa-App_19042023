@@ -1,23 +1,53 @@
 .infoAccommodation {
-    height: 176px;
-    width: 60%;
-    border: red 1px solid;
-    padding-top: 20px;
+  height: auto;
+  width: 60%;
+  padding-top: 20px;
 }
 
 .nameAcco {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 51px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+
 }
 
 .locationAcco {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.containerTag {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .infoAccommodation {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .nameAcco {
     font-size: 18px;
-    display: flex;
-    align-items: flex-end;
+  }
+
+  .locationAcco {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  .containerTag {
+    padding-top: 10px;
+  }
+
 }

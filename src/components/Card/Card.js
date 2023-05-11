@@ -9,7 +9,7 @@ export default function Card({ item }) {
   const navigate = useNavigate();
 
   return (
-    <div className={Styles.card} style={{ backgroundImage: `url(${item.cover})` }} onClick={() => navigate("/Accommodation")}>
+    <div className={Styles.card} style={{ backgroundImage: `url(${item.cover})` }} onClick={() => navigate(`/Accommodation/${item.id}`)}>
       <div className={Styles.gradient}></div>
       <p>{item.title}</p>
     </div>
@@ -17,5 +17,5 @@ export default function Card({ item }) {
 }
 
 Card.propTypes = {
-  title: PropTypes.string,
+  item: PropTypes.object.isRequired,
 };

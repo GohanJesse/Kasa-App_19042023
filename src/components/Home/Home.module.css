@@ -4,3 +4,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.bannerContainerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  height: 223px;
+  width: 86%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .bannerContainerHome {
+    height: 111px;
+    width: 90%;
+    padding-top: 5px;
+  }
+
+}
+

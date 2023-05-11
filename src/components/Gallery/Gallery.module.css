@@ -17,6 +17,7 @@
     overflow: hidden;
     height: auto;
     background: none;
+    padding-top: 20px;
   }
 }
 
@@ -27,7 +28,7 @@
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     grid-gap: 10px;
   }
