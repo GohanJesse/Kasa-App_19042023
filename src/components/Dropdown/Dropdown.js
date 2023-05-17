@@ -8,7 +8,7 @@ export default function Dropdown({ title, content, defaultOpen = false }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen);//sert d'interupteur à chaque clic
   };
 
   return (

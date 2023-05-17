@@ -14,18 +14,20 @@ export default function Accommodation() {
   const navigate = useNavigate();
   const [accommodation, setAccommodation] = useState(urlLocation.state?.item);
 
+
   useEffect(() => {
     if (!accommodation) {
-      const foundAccommodation = Data.find(item => item.id === id);
+      const foundAccommodation = Data.find(item => item.id === id);//recherche du logement en fonction de l'id
       if (foundAccommodation) {
-        setAccommodation(foundAccommodation);
-        console.log(id);
+        setAccommodation(foundAccommodation);//Vérifier si le logement existe et met à jour si ok
+        // console.log(id);
       } else {
-        navigate('/NotFound');
+        navigate('/NotFound');//si le logement n'est pas trouver redirection sur 404
       }
     }
-  }, [id, accommodation, navigate]);
+  }, [id, accommodation, navigate]);//
 
+  //Pour gérer l'erreur si non valide
   if (!accommodation) {
     return null;
   }

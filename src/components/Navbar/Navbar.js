@@ -7,14 +7,14 @@ export default function Navbar() {
     <nav className={Styles.navBar}>
       <NavLink
         to="/"
-        className={({ isActive }) => (isActive ? "activeLink" : "")}
+        className={({ isActive }) => (isActive ? Styles.activeLink : "")} //isActive fourni avec navLink de react router facilite le changement de style du lien actif
       >
         Accueil
       </NavLink>
 
       <NavLink
         to="/About"
-        className={({ isActive }) => (isActive ? "activeLink" : "")}
+        className={({ isActive }) => (isActive ? Styles.activeLink : "")} //isActive fourni avec navLink de react router facilite le changement de style du lien actif
       >
         A propos
       </NavLink>

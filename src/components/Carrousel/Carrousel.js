@@ -7,11 +7,11 @@ export default function Carrousel({ pictures }) {
   const [index, setIndex] = useState(0);
 
   const leftClick = () => {
-    setIndex(index === 0 ? pictures.length - 1: index - 1);
+    setIndex(index === 0 ? pictures.length - 1: index - 1);//retour à l'image précédente ou à la dernière image
   };
 
   const rightClick = () => {
-    setIndex((index + 1) % pictures.length);
+    setIndex((index + 1) % pictures.length);//Avance à l'image suivante, calcul du reste avec modulo pour revenir à la première image
   };
 
   return (
